@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#000000"
-    tools:context="ts023996.reading.ac.uk.hciplannr.MainActivity">
+    tools:context="ts023996.reading.ac.uk.hciplannr.Timetables">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,7 +14,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:fontFamily="monospace"
-        android:text="Welcome to PlannR"
+        android:text="Timetables"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:textStyle="bold"/>
@@ -26,8 +26,8 @@
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="60dp"
-        android:text="Timetables"
-        android:onClick="toTimetables"
+        android:text="Weekly Class Timetable"
+        android:onClick="toClass"
         android:textColor="#fff" />
 
     <Button
@@ -36,20 +36,8 @@
         android:background="@drawable/round_button"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Notifications"
-        android:textSize="12sp"
-        android:onClick="toNotify"
-        android:textColor="#fff" />
-
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/round_button"
-        android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"
-        android:onClick="toDeadlines"
-        android:text="Deadlines"
+        android:layout_marginTop="30dp"
+        android:text="Home Revision Timetable"
+        android:onClick="toHome"
         android:textColor="#fff" />
 </LinearLayout>

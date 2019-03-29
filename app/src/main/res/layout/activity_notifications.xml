@@ -14,42 +14,75 @@
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:fontFamily="monospace"
-        android:text="Welcome to PlannR"
+        android:text="Notifications"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
     <Button
-        android:layout_width="100dp"
+        android:layout_width="1000dp"
         android:layout_height="100dp"
         android:background="@drawable/round_button"
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="60dp"
-        android:text="Timetables"
+        android:text="Deadline in 2 Days"
         android:onClick="toTimetables"
         android:textColor="#fff" />
 
     <Button
-        android:layout_width="100dp"
+        android:layout_width="1000dp"
         android:layout_height="100dp"
         android:background="@drawable/round_button"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
-        android:text="Notifications"
-        android:textSize="12sp"
+        android:text="Deadline in 4 days"
         android:onClick="toNotify"
         android:textColor="#fff" />
 
     <Button
-        android:layout_width="100dp"
+        android:layout_width="1000dp"
         android:layout_height="100dp"
         android:background="@drawable/round_button"
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp"
-        android:onClick="toDeadlines"
-        android:text="Deadlines"
+        android:text="Deadline in 5 days"
         android:textColor="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/black"
+            android:text="+"
+            android:textSize="30sp"
+            android:onClick="add"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/black"
+            android:text="-"
+            android:onClick="remove"
+            android:textColor="@color/red"
+            android:textSize="30sp" />
+    </LinearLayout>
 </LinearLayout>
